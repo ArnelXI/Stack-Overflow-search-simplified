@@ -8,5 +8,5 @@ response_json = requests.get("{0}{1}order={2}&sort={3}&intitle={4}&site={5}".for
 data = response_json.json()
 
 again = "y"
-while again==y:
+while again=="y":
     print(data) 
