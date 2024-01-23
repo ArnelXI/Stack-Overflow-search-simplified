@@ -48,6 +48,11 @@ while again=="y":
         choice = input("Choose what the number associate with your question")
         if int(choice) in range(len(so_far)):
             print("Votre choix est {0}...{1}".format(choice,so_far[int(choice)]["title"]))
+            if so_far[int(choice)]["is_answered"]==True:
+                pass
+            else:
+                #you maybe want to check the internet for an answer
+                pass
         else:
             print("Votre choix n'est pas une options veuillez faire un autre choix...")
     again = input("Press 'y' to ask another question, press 'n' for closing the program: Press y or n:") 
